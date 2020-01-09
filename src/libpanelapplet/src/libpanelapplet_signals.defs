@@ -1,0 +1,232 @@
+;; From PanelApplet
+
+(define-signal change-orient
+  (of-object "PanelApplet")
+  (return-type "void")
+  (when "last")
+  (parameters
+    '("PanelAppletOrient" "p0")
+  )
+)
+
+(define-signal change-size
+  (of-object "PanelApplet")
+  (return-type "void")
+  (when "last")
+  (parameters
+    '("guint" "p0")
+  )
+)
+
+(define-signal change-background
+  (of-object "PanelApplet")
+  (return-type "void")
+  (when "last")
+  (parameters
+    '("PanelAppletBackgroundType" "p0")
+    '("GdkColor*" "p1")
+    '("GdkPixmap*" "p2")
+  )
+)
+
+(define-signal move-focus-out-of-applet
+  (of-object "PanelApplet")
+  (return-type "void")
+  (when "last")
+  (parameters
+    '("GtkDirectionType" "p0")
+  )
+)
+
+(define-property user-data
+  (of-object "PanelApplet")
+  (prop-type "GParamPointer")
+  (readable #t)
+  (writable #t)
+  (construct-only #f)
+)
+
+(define-property name
+  (of-object "PanelApplet")
+  (prop-type "GParamString")
+  (readable #t)
+  (writable #t)
+  (construct-only #f)
+)
+
+(define-property parent
+  (of-object "PanelApplet")
+  (prop-type "GParamObject")
+  (readable #t)
+  (writable #t)
+  (construct-only #f)
+)
+
+(define-property width-request
+  (of-object "PanelApplet")
+  (prop-type "GParamInt")
+  (readable #t)
+  (writable #t)
+  (construct-only #f)
+)
+
+(define-property height-request
+  (of-object "PanelApplet")
+  (prop-type "GParamInt")
+  (readable #t)
+  (writable #t)
+  (construct-only #f)
+)
+
+(define-property visible
+  (of-object "PanelApplet")
+  (prop-type "GParamBoolean")
+  (readable #t)
+  (writable #t)
+  (construct-only #f)
+)
+
+(define-property sensitive
+  (of-object "PanelApplet")
+  (prop-type "GParamBoolean")
+  (readable #t)
+  (writable #t)
+  (construct-only #f)
+)
+
+(define-property app-paintable
+  (of-object "PanelApplet")
+  (prop-type "GParamBoolean")
+  (readable #t)
+  (writable #t)
+  (construct-only #f)
+)
+
+(define-property can-focus
+  (of-object "PanelApplet")
+  (prop-type "GParamBoolean")
+  (readable #t)
+  (writable #t)
+  (construct-only #f)
+)
+
+(define-property has-focus
+  (of-object "PanelApplet")
+  (prop-type "GParamBoolean")
+  (readable #t)
+  (writable #t)
+  (construct-only #f)
+)
+
+(define-property is-focus
+  (of-object "PanelApplet")
+  (prop-type "GParamBoolean")
+  (readable #t)
+  (writable #t)
+  (construct-only #f)
+)
+
+(define-property can-default
+  (of-object "PanelApplet")
+  (prop-type "GParamBoolean")
+  (readable #t)
+  (writable #t)
+  (construct-only #f)
+)
+
+(define-property has-default
+  (of-object "PanelApplet")
+  (prop-type "GParamBoolean")
+  (readable #t)
+  (writable #t)
+  (construct-only #f)
+)
+
+(define-property receives-default
+  (of-object "PanelApplet")
+  (prop-type "GParamBoolean")
+  (readable #t)
+  (writable #t)
+  (construct-only #f)
+)
+
+(define-property composite-child
+  (of-object "PanelApplet")
+  (prop-type "GParamBoolean")
+  (readable #t)
+  (writable #f)
+  (construct-only #f)
+)
+
+(define-property style
+  (of-object "PanelApplet")
+  (prop-type "GParamObject")
+  (readable #t)
+  (writable #t)
+  (construct-only #f)
+)
+
+(define-property events
+  (of-object "PanelApplet")
+  (prop-type "GParamFlags")
+  (readable #t)
+  (writable #t)
+  (construct-only #f)
+)
+
+(define-property extension-events
+  (of-object "PanelApplet")
+  (prop-type "GParamEnum")
+  (readable #t)
+  (writable #t)
+  (construct-only #f)
+)
+
+(define-property no-show-all
+  (of-object "PanelApplet")
+  (prop-type "GParamBoolean")
+  (readable #t)
+  (writable #t)
+  (construct-only #f)
+)
+
+(define-property border-width
+  (of-object "PanelApplet")
+  (prop-type "GParamUInt")
+  (readable #t)
+  (writable #t)
+  (construct-only #f)
+)
+
+(define-property resize-mode
+  (of-object "PanelApplet")
+  (prop-type "GParamEnum")
+  (readable #t)
+  (writable #t)
+  (construct-only #f)
+)
+
+(define-property child
+  (of-object "PanelApplet")
+  (prop-type "GParamObject")
+  (readable #f)
+  (writable #t)
+  (construct-only #f)
+)
+
+(define-property visible-window
+  (of-object "PanelApplet")
+  (prop-type "GParamBoolean")
+  (readable #t)
+  (writable #t)
+  (construct-only #f)
+)
+
+(define-property above-child
+  (of-object "PanelApplet")
+  (prop-type "GParamBoolean")
+  (readable #t)
+  (writable #t)
+  (construct-only #f)
+)
+

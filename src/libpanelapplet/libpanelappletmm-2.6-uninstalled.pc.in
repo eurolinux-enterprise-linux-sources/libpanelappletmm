@@ -1,0 +1,7 @@
+Name: libpanelappletmm
+Description: C++ wrapper for gnome-vfs, not installed.
+Requires: gtkmm-2.4 >= @GTKMM_VERSION_NEEDED@ gconfmm-2.6 >= @GCONFMM_VERSION_NEEDED@ libpanelapplet-2.0 >= @LIBPANELAPPLET_VERSION_NEEDED@
+Version: @VERSION@
+Libs:  ${pc_top_builddir}/${pcfiledir}/libpanelappletmm/liblibpanelappletmm-2.6.la
+Cflags: -I${pc_top_builddir}/${pcfiledir}/@srcdir@/
+

@@ -1,0 +1,30 @@
+<oaf_info>
+
+<oaf_server iid="OAFIID:SimplePAGConf_Factory"
+	    type="exe"
+	    location="PREFIX/examples/gconf/.libs/example">
+
+	<oaf_attribute name="repo_ids" type="stringv">
+		<item value="IDL:Bonobo/GenericFactory:1.0"/>
+		<item value="IDL:Bonobo/Unknown:1.0"/>
+	</oaf_attribute>
+	<oaf_attribute name="name" type="string" value="Simple Panel Applet GConf Factory"/>
+	<oaf_attribute name="description" type="string" value="Factory for testing cpp applet bindings"/>
+</oaf_server>
+
+<oaf_server iid="OAFIID:SimplePAGConf"
+	    type="factory" 
+	    location="OAFIID:SimplePAGConf_Factory">
+
+	<oaf_attribute name="repo_ids" type="stringv">
+		<item value="IDL:GNOME/Vertigo/PanelAppletShell:1.0"/>
+		<item value="IDL:Bonobo/Control:1.0"/>
+		<item value="IDL:Bonobo/Unknown:1.0"/>
+	</oaf_attribute>
+	<oaf_attribute name="name" type="string" value="Simple Panel Applet GConf"/>
+	<oaf_attribute name="description" type="string" value="Its Simple and basically nothing"/>
+	<oaf_attribute name="panel:category" type="string" value="Amusements"/>
+  <oaf_attribute name="panel:icon" type="string" value="panel-notification-area.png"/>
+</oaf_server>
+
+</oaf_info>

@@ -1,0 +1,11 @@
+local_libpanelappletmm_lib	= $(top_builddir)/libpanelapplet/libpanelappletmm/libpanelappletmm-2.6.la
+
+LIBS  = $(local_libpanelappletmm_lib) $(LIBPANELAPPLETMM_LIBS)
+
+all_includes = -I$(top_builddir)/libpanelapplet -I$(top_srcdir)/libpanelapplet \
+               $(LIBPANELAPPLETMM_CFLAGS)
+                     
+DEFS			= @DEFS@
+DEFAULT_INCLUDES	=
+INCLUDES		= -I. -I$(srcdir) $(strip $(all_includes))
+

@@ -1,0 +1,4 @@
+(include libpanelapplet_enums.defs)
+(include libpanelapplet_methods.defs)
+(include libpanelapplet_signals.defs)
+(include libpanelapplet_vfuncs.defs)
